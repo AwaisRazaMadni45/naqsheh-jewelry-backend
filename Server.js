@@ -1,5 +1,5 @@
-import express from "express";
 import dotenv from "dotenv";
+import express from "express";
 import cors from "cors";
 import Connection from "./db/Conn.js";
 import productRoutes from "./routes/productRoutes.js";
