@@ -1,4 +1,7 @@
 import dotenv from "dotenv";
+
+
+
 import express from "express";
 import cors from "cors";
 import Connection from "./db/Conn.js";
@@ -12,7 +15,7 @@ import contactRoutes from "./routes/contactRoutes.js";
 import newsletterRoutes from "./routes/newsletterRoutes.js";
 
 dotenv.config();
-
+console.log("DB_URL =", process.env.DB_URL);
 const app = express();
 Connection()
 app.use(express.json());
